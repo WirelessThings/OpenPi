@@ -5,7 +5,7 @@ OpenPi by Ciseco Ltd is licensed under a Creative Commons Attribution-ShareAlike
 
 This document is a **work in progress**, please feel free to offer updates and comments via github’s issue and pull request system
 
-**Some section are still have TODO place holders**
+**Some sections still have TODO place holders**
 
 What’s on the board
 ===================
@@ -32,7 +32,7 @@ Internal Connections
 * SRF Programming header (JP3, WT use  only)
 * External antenna U.fl footprint
 * RTC battery (CR1220)
-* GPIO Battery breakout (headers available from wirelessthings.net)
+* GPIO Battery breakout (headers will shortly be available from http://wirelessthings.net)
 
 
 Schematic and eagle files
@@ -41,7 +41,7 @@ These can be found here
 
 https://github.com/WirelessThings/OpenPi
 
-Native files are in Cadsoft Eagle v7 format. PDF of the Schematic are also included
+Native files are in Cadsoft Eagle v7 format. PDFs of the Schematic are also included
 
 Gerbers for the board will be added soon
 
@@ -52,7 +52,7 @@ For OpenPi we have built a custom Raspbian Wheezy image.
 A copy can be downloaded from here
 http://file.wirelessthings.net/OpenPi/**..TODO..**
 
-This is the recommended image for use with OpenPI. Its based of the 2015-05-05 Wheezy image as released by the RPF with the following changes:
+This is the recommended image for use with OpenPI. Its based of the 2015-05-05 Wheezy image as released by the Raspberry Pi Foundation with the following changes:
 
 * dt-bin
 * openpi-overlay
@@ -73,8 +73,8 @@ This is the recommended image for use with OpenPI. Its based of the 2015-05-05 W
 * Remove apt-get packages
 	- fake-hwclock
 * Pip install python packages
-	- arrow
-	- xively-python
+    - arrow
+    - xively-python
     - python-twitter
 * Symlink /dev/ttyAMAO to /dev/ttyS1
 * WIK_Files to the desktop (RasWIK python tools)
@@ -100,8 +100,8 @@ Different reward levels
 =======================
 £29
 ---
-The £29 pound reward level include the bare OpenPi PCB
-To get up and running you will need to buy a Raspberry Pi Compute module and flash it with an Operating system image.
+The £29 pound reward level only includes the bare OpenPi PCB.
+To get up and running you will need to buy a Raspberry Pi Compute module and flash it with an operating system image.
 You will also need a suitable power supply (Micro USB 5v 2A), keyboard, HMDI screen and usb network adapter (either usb to LAN or wifi)
 
 We recommend using our pre configured image OS image that can be downloaded from the links above.
@@ -129,7 +129,7 @@ Plug in the USB power supply
 
 At this point the OpenPi should start to boot, the Power LED (Green and closest to the USB power socket) should be on solid and the Activity LED (red) should be flashing
 
-The Screen should come to life and you will start the tradition Raspbian boot screen scroll by.
+The screen should come to life and you will see the traditional Raspbian boot screen scroll by.
 
 On first boot the OpenPi will go into the raspi-config tool, here we recommend that you chose option 1) Expand filesystem, for security change the user password and for ease of identification change the Hostname (Advance Options, Hostname)
 
@@ -190,14 +190,24 @@ Link to Pi LIRC docs, it is on /dev/lirc0 as configured by the DT overlay line �
 
 BLE module setup
 ================
+First update the Raspbian image using *apt-get* to get the new 4.0 kernel::
+
+	$ sudo apt-get update
+	$ sudo apt-get upgrade
+
+add the following line to the end of the */boot/config.txt* file::
+
+   dtoverlay=uart1,txd1_pin=40,rxd1_pin=41
+
+Save and reboot
+
+The serial port */dev/ttyS0* should now be avalible
+
+Links to HM-10 docs
 **..TODO..**
 
-Update pi image using apt-get to get the new 4.0 kernel
-add the following dtoverlay line
-reboot
-away you go
 LightBlue for mac/iOS testing examples
-
+**..TODO..**
 
 Adding an external Antenna
 ==========================
@@ -336,7 +346,7 @@ The following pins are used by device internally on the OpenPi
 | 43   | UART1 CTS                                          | HM-10 BLE                         |
 +------+----------------------------------------------------+-----------------------------------+
 
-OpenPi Device Tree files and settings
+OpenPi DeviceTree files and settings
 =====================================
 **..TODO..**
 
