@@ -50,7 +50,7 @@ OS Image
 
 For OpenPi we have built a custom Raspbian Wheezy image.
 A copy can be downloaded from here
-http://file.wirelessthings.net/OpenPi/..TODO..
+http://file.wirelessthings.net/OpenPi/**..TODO..**
 
 This is the recommended image for use with OpenPI. Its based of the 2015-05-05 Wheezy image as released by the RPF with the following changes:
 
@@ -183,14 +183,14 @@ Once set up you can either leave the MessageBridge running and try out the examp
 
 IR Receive setup
 ================
-..TODO..
+**..TODO..**
 
 Link to Pi LIRC docs, it is on /dev/lirc0 as configured by the DT overlay line …. to /boot/config.txt
 
 
 BLE module setup
 ================
-..TODO..
+**..TODO..**
 
 Update pi image using apt-get to get the new 4.0 kernel
 add the following dtoverlay line
@@ -201,7 +201,7 @@ LightBlue for mac/iOS testing examples
 
 Adding an external Antenna
 ==========================
-..TODO..
+**..TODO..**
 
 parts can be brought on shop <>
 
@@ -338,7 +338,7 @@ The following pins are used by device internally on the OpenPi
 
 OpenPi Device Tree files and settings
 =====================================
-..TODO..
+**..TODO..**
 
 To correctly configure the GPIO pins on a pi we use DT files
 below is an explanation of ..
@@ -355,7 +355,7 @@ dt-blob.dts
 -----------
 This file is used by the videocore (GPU) of the Pi to setup the default pin states at boot before handing over to the ARM core (Linux)
 
-Customisation for OpenPi are ..TODO..
+Customisation for OpenPi are **..TODO..**
 
 Source file can be found here
 
@@ -369,7 +369,7 @@ openpi-overlay.dts
 ------------------
 This file is used by the linux to setup the gpio pins and drivers for OpenPi’s peripherals
 
-Customisation for OpenPi are ..TODO..
+Customisation for OpenPi are **..TODO..**
 
 Source file can be found here
 https://github.com/WirelessThings/OpenPi/blob/master/DeviceTree/openpi-overlay.dts
