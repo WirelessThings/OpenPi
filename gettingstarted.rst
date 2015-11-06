@@ -149,14 +149,14 @@ To use the GUI, start the x windows system::
 Now you can use the Icon in the top right of the task bar to setup your wifi network
 
 If you wish to use the configuration file, edit the following file with your prefered text editor
-*/etc/wpa_suplicant/wpa_suplicant.conf*
+*/etc/wpa_suplicant/wpa_supplicant.conf*
 ::
 
-    $ sudo vi /etc/wpa_suplicant/wpa_suplicant.conf
+    $ sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
 
 or::
 
-    $ sudo nano /etc/wpa_suplicant/wpa_suplicant.conf
+    $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
 Add the following section to the file::
 
