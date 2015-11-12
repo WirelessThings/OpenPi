@@ -50,7 +50,7 @@ OS Image
 
 For OpenPi we have built a custom Raspbian Wheezy image.
 A copy can be downloaded from here
-http://file.wirelessthings.net/OpenPi/**..TODO..**
+http://files.wirelessthings.net/OpenPi/2015-06-23-raspbian-wheezy-openpi.img.zip
 
 This is the recommended image for use with OpenPI. Its based of the 2015-05-05 Wheezy image as released by the Raspberry Pi Foundation with the following changes:
 
