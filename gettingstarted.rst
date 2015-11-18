@@ -52,6 +52,8 @@ For OpenPi we have built a custom Raspbian Wheezy image.
 A copy can be downloaded from here
 http://files.wirelessthings.net/OpenPi/2015-06-23-raspbian-wheezy-openpi.img.zip
 
+For details on how to flash a Compute module please see the offical Raspberry Pi docs here https://www.raspberrypi.org/documentation/hardware/computemodule/cm-emmc-flashing.md
+
 This is the recommended image for use with OpenPI. Its based of the 2015-05-05 Wheezy image as released by the Raspberry Pi Foundation with the following changes:
 
 * dt-bin
