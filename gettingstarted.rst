@@ -133,7 +133,7 @@ At this point the OpenPi should start to boot, the Power LED (Green and closest 
 
 The screen should come to life and you will see the traditional Raspbian boot screen scroll by.
 
-On first boot the OpenPi will go into the raspi-config tool, here we recommend that you chose option 1) Expand filesystem, for security change the user password and for ease of identification change the Hostname (Advance Options, Hostname)
+On first boot the OpenPi will go into the **raspi-config** tool, here we recommend that you chose option 1) **Expand filesystem**, for security change the user password and for ease of identification change the Hostname (Advance Options, Hostname)
 
 Once finished the OpenPi should reboot to expand the filesystem and then present you with a login prompt
 
@@ -192,7 +192,7 @@ Link to Pi LIRC docs, it is on /dev/lirc0 as configured by the DT overlay line â
 
 BLE module setup
 ================
-First update the Raspbian image using *apt-get* to get the new 4.0 kernel::
+First update the Raspbian image using *apt-get* to get the new 4.0 kernel. NOTE: You must have expanded the file system using *raspi-config* first::
 
 	$ sudo apt-get update
 	$ sudo apt-get upgrade
